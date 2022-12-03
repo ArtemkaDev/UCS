@@ -1,5 +1,5 @@
 const { discord } = require("../discord/discord")
 
-const Discord = discord("")
+const Discord = new discord()
 
-module.exports = Discord
+module.exports = { Discord }

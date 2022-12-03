@@ -8,8 +8,17 @@
             "name": "BlockChain",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/BlockChain/main.py",
+            "program": "${workspaceFolder}/Web/back/start.py",
             "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "BackEnd run",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Web/back/start.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Web/back",
             "justMyCode": true
         }
     ]

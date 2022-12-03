@@ -3,22 +3,14 @@ const { MessageEmbed } = require('discord.js')
 const cooldown = new Set()
 
 module.exports = {
-    // https://discordjs.guide/slash-commands/advanced-creation.html#localizations
     data: new SlashCommandBuilder()
         .setName("ping")
-        .setNameLocalizations({
-            uk: "пінг"
-        })
-        .setDescription("Показати затримку між повідомленнями")
-        .setDescriptionLocalizations({
-            "en-US": "Show delay between messages",
-            "en-GB": "Show delay between messages",
-        }),
+        .setDescription("Показать задержку бота"),
     async execute(interaction, client){
         let colorpal = ["90be6d", "f9c74f", "f8961e", "f94144"]
         let coloring = 0
         if (cooldown.has(interaction.user.id)) {
-            interaction.reply({ content: "Очікуйте доступа команди", ephemeral: true });
+            interaction.reply({ content: "Ожидайте доступа к команде", ephemeral: true });
 
         } else {
             let timeleft = Date.now() - interaction.createdTimestamp
@@ -31,7 +23,7 @@ module.exports = {
             interaction.reply({embeds: [
                     new MessageEmbed()
                         .setColor(colorpal[coloring])
-                        .setDescription(`Затримка між повідомленнями: ${timeleft}ms.\nЗатримка Discord API: ${Math.round(client.ws.ping)}ms`)
+                        .setDescription(`Задержка: ${timeleft}ms.\nЗадержка Discord API: ${Math.round(client.ws.ping)}ms`)
                 ]}
             )
             cooldown.add(interaction.user.id);
