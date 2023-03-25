@@ -1,12 +1,12 @@
 const { SlashCommandBuilder } = require("@discordjs/builders")
-const { MessageEmbed, PermissionFlags } = require('discord.js')
+const { MessageEmbed, PermissionFlagsBits } = require('discord.js')
 const { initialized } = require('../../modules/event')
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("debug")
         .setDescription("Інформація про backend")
-        .setDefaultMemberPermissions(PermissionFlags.ADMINISTRATOR)
+        .setDefaultMemberPermissions()
         .addUserOption((option) => {
             option
                 .setName("select")

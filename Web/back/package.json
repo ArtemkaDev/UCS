@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "nodemon": "nodemon main.js",
+    "start": "node main.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArtemkaDev/UCS.git"

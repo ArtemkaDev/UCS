@@ -14,12 +14,20 @@
         },
         {
             "name": "BackEnd run",
-            "type": "python",
+            "program": "${workspaceFolder}/Web/back/main.js",
             "request": "launch",
-            "program": "${workspaceFolder}/Web/back/start.py",
-            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
             "cwd": "${workspaceFolder}/Web/back",
-            "justMyCode": true
+            "type": "node"
+        },
+        {
+            "command": "npm run nodemon",
+            "name": "Run NoDemon",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/Web/back",
+            "type": "node-terminal"
         }
     ]
 }

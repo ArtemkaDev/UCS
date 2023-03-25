@@ -3,18 +3,27 @@ const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 const fs = require("fs");
 const { ready } = require("../modules/event");
-const { config } = require("../modules/config")
+
 
 class discord {
-  constructor() {
+  constructor(TOKEN) {
     this.client = new Client({
       intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
     });
     
-
-    this.commandFiles = fs
-      .readdirSync("./commands")
-      .filter((file) => file.endsWith(".js"));
+    try{
+      this.commandFiles = fs
+        .readdirSync("./commands")
+        .filter((file) => file.endsWith(".js"));
+    } catch {
+      try{
+        this.commandFiles = fs
+          .readdirSync("./discord/commands")
+          .filter((file) => file.endsWith(".js"));
+      } catch {
+        ready("discord", "commands", false);
+      }
+    }
     this.commands = [];
     this.client.commands = new Collection();
 
@@ -30,7 +39,7 @@ class discord {
 
       this.rest = new REST({
         version: "9",
-      }).setToken(config.DsTokens);
+      }).setToken(TOKEN);
       try {
         if (process.env.ENV === "production") {
           await this.rest.put(Routes.applicationCommands(CLIENT_ID), {
@@ -49,6 +58,10 @@ class discord {
         await require("../modules/error")(e);
         await ready("discord", "rest", false);
       }
+
+      const guild = this.client.guilds.get(process.env.CLIENT_ID);
+      await guild.commands.set(a)
+
       await ready("discord", "main", true);
     });
 
@@ -68,7 +81,7 @@ class discord {
         });
       }
     });
-    this.client.login(config.DsTokens);
+    this.client.login(TOKEN);
   }
 }
 

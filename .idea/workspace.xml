@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7592002-1197-4bce-8789-a65751a6af3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChain/block.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChain/c++/usc/usc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChain/c++/usc/usc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChain/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/back.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/commands/ping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/discord/commands/loger.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/discord/commands/loger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/discord/discord.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/discord/discord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/modules/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/modules/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/modules/discord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/back/start.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2K03i1YBPIR3jnUyB1TlMr7I3CC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7592002-1197-4bce-8789-a65751a6af3a" name="Default Changelist" comment="" />
+      <created>1673097796428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673097796428</updated>
+      <workItem from="1673097802204" duration="254000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
