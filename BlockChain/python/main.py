@@ -21,7 +21,7 @@ def main(stdscr):
     stdscr.addstr(1, 38, "System", curses.color_pair(4))
     stdscr.addstr(2, 0, "==================================================================\n")
 
-    Thread(target=block.start, args=(["0000df7e0fbe0cd543351621635bcd43fcd1b8cd24393e9164b5b7769d45b7f3"], )).start()
+    Thread(target=block.start, args=(["000000ab1c004f9f04d7557c32c7d5043d8353cd7c830a01a1deb7b89fbab024", "00000086208fa415e22f7c2b4071fd28fa1bbd0cf4e2db8b11f98cbaec92dc7e"], )).start()
     
     menu(stdscr, block) 
 

@@ -6,7 +6,7 @@ class Block:
         self.stdscr = stdscr
         self.__info = []
         self.threads = -1
-        self.times_int = 4
+        self.times_int = 6
         self.times_string = ""
         self.mode = 0
         for i in range(self.times_int):
